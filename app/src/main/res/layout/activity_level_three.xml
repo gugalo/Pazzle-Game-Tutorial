@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title: Level Three -->
+    <TextView
+        android:id="@+id/levelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level Three"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description: To proceed view under different angle -->
+    <TextView
+        android:id="@+id/levelDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To proceed view under different angle"
+        android:textSize="16sp" />
+
+    <!-- Next Level button (hidden by default) -->
+    <Button
+        android:id="@+id/nextLevelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Next Level"
+        android:visibility="gone" />
+
+</LinearLayout>

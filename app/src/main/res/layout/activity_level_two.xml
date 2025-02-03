@@ -7,51 +7,40 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <!-- Title at the top -->
+    <!-- Title: Level Two -->
     <TextView
-        android:id="@+id/levelTwoTitle"
+        android:id="@+id/levelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Level One"
+        android:text="Level Two"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- Description under the title -->
+    <!-- Description: To proceed enter password -->
     <TextView
         android:id="@+id/levelDescriptionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the big round button 100 times!"
+        android:text="To proceed enter password"
         android:textSize="16sp"
         android:layout_marginBottom="8dp" />
 
-    <!-- Current Click Count -->
-    <TextView
-        android:id="@+id/clickCounterTextView"
+    <!-- EditText field to input the password -->
+    <EditText
+        android:id="@+id/passwordInputView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter password here"
+        android:inputType="textPassword"/>
+
+    <!-- Next Level button (disabled by default) -->
+    <Button
+        android:id="@+id/nextLevelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 / 100"
-        android:textSize="24sp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"/>
-
-    <!-- Big Round Button -->
-    <Button
-        android:id="@+id/clickMeButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Click Me!"
-        android:textSize="18sp"
-        android:layout_marginTop="24dp" />
-
-    <!-- Next Button (disabled initially) -->
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Next Level"
-        android:enabled="false"
-        android:layout_marginTop="32dp"/>
+        android:enabled="false" />
 
 </LinearLayout>

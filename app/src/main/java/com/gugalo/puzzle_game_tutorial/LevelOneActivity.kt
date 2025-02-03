@@ -37,5 +37,11 @@ class LevelOneActivity : AppCompatActivity() {
                 nextLevelButton.isEnabled = true
             }
         }
+
+        // Handle click on the next button to go to the congratulation screen
+        nextLevelButton.setOnClickListener {
+            val intent = Intent(this, LevelTwoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
